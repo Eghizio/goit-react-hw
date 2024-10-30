@@ -1,0 +1,34 @@
+.table {
+  margin: 5% auto;
+
+  --cell-width: 160px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: x-large;
+
+  border-collapse: collapse;
+}
+
+.table table,
+.table th,
+.table td {
+  border: 2px solid black;
+}
+
+.table tr:nth-of-type(2n) {
+  background-color: lightgray;
+}
+
+.cell {
+  width: var(--cell-width);
+  padding: 1rem 6rem;
+  text-align: center;
+}
+
+.cell.header {
+  background-color: #222;
+  color: white;
+}
+
+.type {
+  text-transform: capitalize;
+}
