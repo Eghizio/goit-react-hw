@@ -6,7 +6,7 @@ import userData from "./userData.json";
 import friends from "./friends.json";
 import transactions from "./transactions.json";
 
-export const App = () => (
+export const Homework_01 = () => (
   <Switcher component="Social Media Profile">
     <Profile
       name={userData.username}
