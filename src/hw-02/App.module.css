@@ -1,0 +1,12 @@
+.cafe {
+  font-size: xx-large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cafe button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+}
