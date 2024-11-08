@@ -3,14 +3,13 @@ import { Children, useState } from "react";
 export const Homeworks = ({ children }) => {
   const [selectedHomework, setSelectedHomework] = useState(0);
 
-  const displayedHomework = children[selectedHomework];
+  const ChildrenArray = Children.toArray(children);
+
+  const displayedHomework = ChildrenArray[selectedHomework];
 
   const isActive = (i) => i === selectedHomework;
 
-  const homeworks = Array.from(
-    { length: Children.toArray(children).length },
-    (_, i) => i
-  );
+  const homeworks = Array.from({ length: ChildrenArray.length }, (_, i) => i);
 
   return (
     <>

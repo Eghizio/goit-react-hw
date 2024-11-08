@@ -1,0 +1,28 @@
+.container {
+  padding: 1.5rem 0.5rem;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.form {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form .row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input {
+  padding: 0.5rem;
+  width: 300px;
+}
+
+.error {
+  color: red;
+}
