@@ -1,41 +1,9 @@
 import { useEffect, useState } from "react";
+import { Description } from "./components/Description/Description";
+import { Options } from "./components/Options/Options";
+import { Feedback } from "./components/Feedback/Feedback";
+import { Notification } from "./components/Notification/Notification";
 import css from "./App.module.css";
-
-const If = ({ children, condition }) => (condition ? children : null);
-
-const Description = () => (
-  <header>
-    <h1>Sip Happens Café</h1>
-    <p>
-      Please leave your feedback about our service by selecting one of the
-      options below.
-    </p>
-  </header>
-);
-
-const Options = ({ updateFeedback, totalFeedback }) => (
-  <section>
-    <button onClick={() => updateFeedback("good")}>Good</button>
-    <button onClick={() => updateFeedback("neutral")}>Neutral</button>
-    <button onClick={() => updateFeedback("bad")}>Bad</button>
-
-    <If condition={totalFeedback >= 1}>
-      <button onClick={() => updateFeedback("reset")}>Reset</button>
-    </If>
-  </section>
-);
-
-const Feedback = ({ feedbacks: { good, neutral, bad }, total, positive }) => (
-  <section>
-    <p>Good: {good}</p>
-    <p>Neutral: {neutral}</p>
-    <p>Bad: {bad}</p>
-    <p>Total: {total}</p>
-    <p>Positive: {positive}%</p>
-  </section>
-);
-
-const Notification = () => <p>No feedback yet</p>;
 
 const initialFeedbacks = {
   good: 0,
