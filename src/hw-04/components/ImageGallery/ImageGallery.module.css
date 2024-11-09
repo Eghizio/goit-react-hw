@@ -1,0 +1,19 @@
+.list {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  list-style-type: none;
+
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.item {
+  cursor: pointer;
+}
+
+.item:hover {
+  filter: blur(5px);
+}

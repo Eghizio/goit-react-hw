@@ -5,6 +5,7 @@ import { Homeworks } from "./shared/components/Homeworks/Homeworks";
 import { Homework_01 } from "./hw-01/App.jsx";
 import { Homework_02 } from "./hw-02/App.jsx";
 import { Homework_03 } from "./hw-03/App.jsx";
+import { Homework_04 } from "./hw-04/App.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -12,6 +13,7 @@ createRoot(document.getElementById("root")).render(
       <Homework_01 />
       <Homework_02 />
       <Homework_03 />
+      <Homework_04 />
     </Homeworks>
   </StrictMode>
 );
