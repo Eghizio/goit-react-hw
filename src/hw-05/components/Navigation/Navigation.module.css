@@ -1,0 +1,27 @@
+.headerBar {
+  width: 100%;
+  box-shadow: 0 5px 5px lightgray;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  font-size: larger;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link.active {
+  font-weight: bold;
+  color: palevioletred;
+  text-decoration: underline;
+}

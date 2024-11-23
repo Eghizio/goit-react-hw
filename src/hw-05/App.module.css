@@ -1,0 +1,21 @@
+.app {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.page {
+  width: 100%;
+  padding: 1rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.back {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+}

@@ -1,0 +1,39 @@
+.bar {
+  padding: 0 4px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.searchBar {
+  position: relative;
+}
+
+.input {
+  padding: 0.5rem;
+  padding-right: 1.5rem;
+  width: 200px;
+  border: none;
+  background-color: lightgray;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  filter: brightness(0.75);
+}
+
+.btn.clear {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.btn.search {
+  background-color: lightgray;
+}

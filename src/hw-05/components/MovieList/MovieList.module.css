@@ -1,0 +1,8 @@
+.item {
+  font-size: x-large;
+  font-weight: 300;
+}
+
+.link:hover {
+  color: palevioletred;
+}

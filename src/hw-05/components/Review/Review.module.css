@@ -1,0 +1,21 @@
+.review {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  width: 60vw;
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 6px;
+  background-color: snow;
+  filter: saturate(85%) blur(0.5px);
+  transition: filter 400ms, box-shadow 400ms, color 300ms;
+}
+
+.review:hover {
+  box-shadow: 0px 0px 20px palevioletred;
+  color: darkslategray;
+  filter: saturate(100%);
+}
+
+.author {
+  font-weight: bold;
+  text-decoration: underline;
+}
