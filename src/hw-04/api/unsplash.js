@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const ACCESS_KEY = "_LfWUGA0-i62hQGGrtmG2hnkU-D6Mt6gNGfaU0eRR_4";
+const ACCESS_KEY = import.meta.env.VITE_UNSPLASH_KEY;
 
 const client = axios.create({
   baseURL: "https://api.unsplash.com/",
